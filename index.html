@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание sales generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" id="amo_pixel_identifier_js" async="async"
+        src="https://piper.amocrm.ru/pixel/js/identifier/pixel_identifier.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <button class="click-btn" type="button" data-target="form">Кликни</button>
+    </div>
+
+    <div class="popup">
+        <div class="popup__wrapper form-popup">
+            <button class="popup__close" type="button"><img src="./img/close.png" alt=""
+                    class="popup__close-icon"></button>
+
+            <h2 class="popup__header">Получите набор файлов<br> для руководителя:</h2>
+            <ul class="popup__icons">
+                <li class="popup__icons-item"><img src="./img/doc.png" alt="" class="popup__icons-img"></li>
+                <li class="popup__icons-item"><img src="./img/xls.png" alt="" class="popup__icons-img"></li>
+                <li class="popup__icons-item"><img src="./img/pdf.png" alt="" class="popup__icons-img"></li>
+                <li class="popup__icons-item"><img src="./img/pdf.png" alt="" class="popup__icons-img"></li>
+                <li class="popup__icons-item"><img src="./img/pdf.png" alt="" class="popup__icons-img"></li>
+                <li class="popup__icons-item"><img src="./img/pdf.png" alt="" class="popup__icons-img"></li>
+                <li class="popup__icons-item"><img src="./img/pdf.png" alt="" class="popup__icons-img"></li>
+            </ul>
+            <div class="popup__form">
+                <form action="" class="form">
+                    <div class="form__fields">
+                        <div class="form__field">
+                            <label for="" class="form__label">Введите Email для получения файлов:</label>
+                            <input type="text" class="form__input" placeholder="E-mail" name="email">
+                        </div>
+                        <div class="form__field">
+                            <label for="" class="form__label">Введите телефон для подтверждения доступа:</label>
+                            <input type="tel" class="form__input" placeholder="+7 (000) 000-00-00" required
+                                name="phone">
+                        </div>
+                    </div>
+                    <button class="form__btn" type="submit">Скачать файлы<img src="./img/finger.png" alt=""
+                            class="form__btn-img"></button>
+                    <ul class="form__file-sizes">
+                        <li class="form__file-sizes-item">PDF 4,7 MB</li>
+                        <li class="form__file-sizes-item">DOC 0,8 MB</li>
+                        <li class="form__file-sizes-item">XLS 1,2 MB</li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="success-window">
+            Ваше сообщение успешно отправлено
+        </div>
+        <div class="fail-window">
+            Возникла ошибка, попробуйте позже
+        </div>
+    </div>
+</body>
+
+</html>
